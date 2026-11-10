@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutzerklärung – Night Courier</title>
+<style>
+:root { --bg: #fbfaf7; --fg: #1d1b26; --muted: #5d5a6b; --line: #dedbe6; --accent: #4b3f8f; --todo: #ffe58a; color-scheme: light dark; }
+@media (prefers-color-scheme: dark) { :root { --bg: #14121c; --fg: #ece9f5; --muted: #a9a5ba; --line: #2f2b3d; --accent: #b3a7f5; --todo: #6b5600; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 46rem; margin: 0 auto; padding: 2rem 16px 4rem; }
+h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 .5rem; }
+h2 { font-size: 1.35rem; margin: 2.5rem 0 .5rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+h3 { font-size: 1.1rem; margin: 1.75rem 0 .25rem; }
+a { color: var(--accent); }
+table { border-collapse: collapse; width: 100%; display: block; overflow-x: auto; font-size: .95rem; }
+th, td { border: 1px solid var(--line); padding: .45rem .6rem; text-align: left; vertical-align: top; }
+th { background: color-mix(in srgb, var(--line) 40%, transparent); }
+code { font-size: .9em; }
+mark.todo { background: var(--todo); color: inherit; padding: 0 .2em; border-radius: 3px; }
+nav.lang { font-size: .95rem; margin-bottom: 1.5rem; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<nav class="lang"><a href="index.html">Hilfe und Kontakt</a> · <a href="privacy-policy.en.html" hreflang="en">English version</a></nav>
+<h1>Datenschutzerklärung für Night Courier</h1>
+<p><strong>Stand: 10. November 2026</strong></p>
+<p>Diese Datenschutzerklärung gibt es auch auf Englisch. Verbindlich ist diese deutsche Fassung.</p>
+<h2>Kurz gesagt</h2>
+<ul>
+<li>Night Courier ist eine private App für Briefe unter Freunden. Ich betreibe sie allein, als
+Privatperson in der Schweiz – ohne Firma und ohne damit Geld zu verdienen.</li>
+<li>Für mich gilt deshalb das Schweizer Datenschutzgesetz (DSG). Wenn du in der EU oder im EWR
+wohnst, gilt für deine Daten außerdem die DSGVO (Abschnitt 1).</li>
+<li>Es gibt keine Werbung, kein Tracking, keine Analyse-Tools, keine Push-Nachrichten und nichts zu
+kaufen. Ich verkaufe keine Daten.</li>
+<li>Ich speichere nur, was die App zum Funktionieren braucht: deine E-Mail-Adresse, dein Passwort (nur
+so, dass es niemand lesen kann), deinen Benutzernamen und Anzeigenamen, deine Stadt, deine
+Freundschaften, deine Briefe, wen du blockierst und was du meldest. Dazu kommen technische Daten
+wie deine IP-Adresse, die bei der Anmeldung und in Protokollen anfallen.</li>
+<li>Die Datenbank liegt bei Supabase, einem Dienst aus den USA, auf Servern in Zürich in der Schweiz
+(Abschnitte 7 und 8). Diese Erklärung und die Kontaktseite liegen bei GitHub, ebenfalls einem
+Dienst aus den USA.</li>
+<li>Briefe sind nicht Ende-zu-Ende-verschlüsselt. Technisch könnten ich und Supabase sie lesen. Ich
+lese Briefe nur, wenn sie mir gemeldet werden oder ich anders einen technischen Fehler nicht
+beheben kann.</li>
+<li>Du kannst dein Konto jederzeit in der App löschen. Dann sind auch alle Briefe weg, die du
+geschickt oder bekommen hast, auch bei den Freunden, mit denen du geschrieben hast. Einiges bleibt
+danach noch eine Weile, vor allem Meldungen: bis zu 180 Tage (Abschnitt 11).</li>
+<li>Night Courier ist ab 13 Jahren. Wer unter 16 ist, braucht die Erlaubnis der Eltern oder anderer
+Erziehungsberechtigter.</li>
+<li>Du hast Rechte, zum Beispiel auf Auskunft und Löschung. Schreib mir einfach: <a href="mailto:vinnivinz@live.de">vinnivinz@live.de</a>.</li>
+</ul>
+<h2>1. Wer ist für deine Daten verantwortlich?</h2>
+<p>Verantwortlich im Sinne des Schweizer Bundesgesetzes über den Datenschutz (DSG) und der
+Datenschutz-Grundverordnung der EU (DSGVO) ist:</p>
+<ul>
+<li><strong>Name:</strong> Adam Vincus</li>
+<li><strong>Anschrift:</strong> Burstwiesenstrasse 80, 8055 Zürich, Schweiz</li>
+<li><strong>E-Mail:</strong> <a href="mailto:vinnivinz@live.de">vinnivinz@live.de</a></li>
+<li><strong>Kontakt und Hilfe:</strong> <a href="https://vnznznznz.github.io/night-courier/">https://vnznznznz.github.io/night-courier/</a></li>
+</ul>
+<p>Ich betreibe Night Courier als Privatperson, nicht als Unternehmen, und lebe in der Schweiz. Einen
+Datenschutzbeauftragten habe ich nicht benannt – mit allen Fragen zum Datenschutz kannst du dich
+direkt an mich wenden. Wenn hier „ich“ steht, bin ich gemeint; „du“ bist du, wenn du Night Courier
+nutzt.</p>
+<p><strong>Welches Recht gilt.</strong> Weil ich in der Schweiz lebe, gilt für mich das DSG in der revidierten
+Fassung, die seit dem 1. September 2023 in Kraft ist. Night Courier wird auch Menschen in der EU und
+im EWR angeboten; für ihre Daten gilt deshalb zusätzlich die DSGVO (Art. 3 Abs. 2 lit. a DSGVO). Die
+Rechtsgrundlagen, die ich in dieser Erklärung nenne, sind die der DSGVO. Das DSG verlangt nicht für
+jede Bearbeitung eine solche Grundlage, sondern dass ich mich an seine Grundsätze halte (Art. 6 DSG)
+– zum Beispiel Daten nur für die hier genannten Zwecke und nur so weit wie nötig zu verarbeiten.</p>
+<h2>2. Worum es geht</h2>
+<p>Night Courier ist eine App für langsame Briefe. Jede Person hat drei Fledermäuse. Eine Fledermaus
+trägt einen Brief und fliegt die echte Entfernung zwischen deiner Stadt und der Stadt deines
+Freundes oder deiner Freundin: Je weiter, desto länger – in derselben Stadt mindestens 20 Minuten,
+über einen Kontinent mehrere Tage.</p>
+<p>Briefe gibt es nur zwischen Menschen, die sich gegenseitig als Freunde angenommen haben. Es gibt
+keine Suche, keine öffentlichen Profile und keine Möglichkeit, Fremden zu schreiben.</p>
+<p>Die Regeln für die Nutzung stehen in den Hausregeln in der App („Your profile“ → „House rules“). Die App
+selbst ist auf Englisch; deshalb nenne ich Knöpfe hier mit ihrem englischen Namen.</p>
+<h2>3. Welche Daten ich verarbeite, und wozu</h2>
+<h3>3.1 Dein Konto</h3>
+<p>Wenn du dich registrierst, gibst du deine E-Mail-Adresse, ein Passwort, einen Benutzernamen und
+einen Anzeigenamen ein.</p>
+<ul>
+<li><strong>E-Mail-Adresse.</strong> Damit meldest du dich an, und dorthin geht eine E-Mail, wenn du dein Passwort
+vergessen hast. Ich nutze sie auch, um dir zu schreiben, wenn es nötig ist – zum Beispiel eine
+Verwarnung nach einer Meldung, eine Nachricht, wenn du eine Drohung gemeldet hast (Abschnitt
+3.7), oder einen Hinweis auf eine wichtige Änderung dieser Erklärung (Abschnitt 15). Andere Nutzer
+sehen deine E-Mail-Adresse nie.</li>
+<li><strong>Passwort.</strong> Gespeichert wird nur ein sogenannter Hashwert (bcrypt). Daraus kann niemand dein
+Passwort zurückrechnen, auch ich nicht. Die App selbst speichert dein Passwort nicht.</li>
+<li><strong>Kontodaten.</strong> Zu deinem Konto gehören eine zufällige Nutzer-ID und einige Zeitpunkte: wann das
+Konto angelegt wurde, wann du dich zuletzt angemeldet hast, wann deine E-Mail-Adresse als
+bestätigt gilt und wann zuletzt eine E-Mail zum Zurücksetzen des Passworts verschickt wurde – und
+gegebenenfalls eine Sperre (Abschnitt 3.8).</li>
+<li><strong>Eine Kopie deiner Namen von der Registrierung.</strong> Den Benutzernamen und den Anzeigenamen, die du
+bei der Registrierung eingibst, legt Supabase zusätzlich in deinem Kontodatensatz ab. Daraus
+entsteht dein Profil; danach wird die Kopie nicht mehr gebraucht. Ein täglicher Auftrag löscht
+sie, spätestens einen Tag nach der Registrierung. Bis dahin steht sie auch in deinem
+Anmelde-Token auf deinem Gerät (Abschnitt 5).</li>
+</ul>
+<p><strong>Wozu:</strong> um dir ein Konto zu geben und die App bereitzustellen. <strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1
+lit. b DSGVO – die Daten sind nötig, um dir die App so bereitzustellen, wie es die Hausregeln
+beschreiben.</p>
+<h3>3.2 Dein Profil und deine Stadt</h3>
+<ul>
+<li><strong>Benutzername.</strong> Damit finden dich Freunde: Wer dir eine Freundschaftsanfrage schicken will, muss
+deinen Benutzernamen genau kennen. In der App lässt er sich nicht ändern.</li>
+<li><strong>Anzeigename.</strong> Der Name, den deine Freunde sehen und alle, denen du eine Anfrage schickst. Du
+kannst ihn jederzeit im Profil ändern.</li>
+<li><strong>Deine Stadt.</strong> Du wählst sie aus einer Liste. Die App fragt nie nach deinem Standort und benutzt
+kein GPS. Aus der Entfernung zwischen zwei Städten berechnet der Server, wie lange eine Fledermaus
+fliegt.</li>
+<li><strong>Umzüge.</strong> Eine neue Stadt gilt erst nach 24 Stunden als die, von der deine Fledermäuse
+losfliegen – sonst könnte man sich für einen kurzen Flug die Stadt eines Freundes „leihen“. Dafür
+speichere ich bei einem Wechsel deine vorherige Stadt und den Zeitpunkt des Wechsels. Sind die 24
+Stunden vorbei, löscht ein täglicher Auftrag beides, spätestens zwei Tage nach dem Wechsel.</li>
+</ul>
+<p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO.</p>
+<h3>3.3 Freundschaften und Anfragen</h3>
+<p>Gespeichert wird, wer wem eine Anfrage geschickt hat, ob sie angenommen wurde, wann sie gestellt und
+wann sie angenommen wurde. Eine offene Anfrage bleibt bestehen, bis sie angenommen, abgelehnt oder
+zurückgezogen wird; sie läuft nicht von selbst ab. Wird eine Anfrage abgelehnt oder zurückgezogen,
+eine Freundschaft beendet oder durch eine Blockierung aufgelöst, lösche ich den Eintrag.</p>
+<p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO.</p>
+<h3>3.4 Briefe</h3>
+<p>Zu jedem Brief speichere ich:</p>
+<ul>
+<li>den Text (1 bis 2.000 Zeichen),</li>
+<li>wer ihn geschickt hat und an wen,</li>
+<li>welche Fledermaus ihn trägt,</li>
+<li>von welcher Stadt in welche Stadt er fliegt – so, wie die Städte beim Absenden waren – und die
+Entfernung,</li>
+<li>wann er abgeschickt wurde, wann er landen soll und wann er gelandet ist,</li>
+<li>wann der Empfänger ihn zum ersten Mal geöffnet hat. Das sieht nur der Empfänger selbst; es gibt
+keine Lesebestätigungen,</li>
+<li>eine technische Kennung, damit ein Brief nicht doppelt verschickt wird.</li>
+</ul>
+<p>Briefe liegen als Text in der Datenbank. Auf dem Weg dorthin sind sie verschlüsselt (HTTPS), und
+Supabase verschlüsselt die gespeicherten Daten. Eine Ende-zu-Ende-Verschlüsselung gibt es aber
+nicht. Das heißt: Technisch können ich und Supabase jeden Brief lesen. Ich lese Briefe nur, wenn sie
+mir gemeldet wurden (Abschnitt 3.7) oder wenn ich anders einen technischen Fehler nicht beheben
+kann.</p>
+<p>In einen Brief kannst du schreiben, was du möchtest – auch sehr Persönliches, etwa über deine
+Gesundheit oder deinen Glauben. Ich werte Briefe nicht aus und nutze sie für nichts anderes, als sie
+zuzustellen – es sei denn, ein Brief wird gemeldet (Abschnitt 3.7). Überleg trotzdem, was du
+schreibst: Wer deinen Brief bekommt, kann ihn behalten, abschreiben oder fotografieren.</p>
+<p>Einen einzelnen Brief kann niemand löschen, weder Absender noch Empfänger, und eine Frist, nach der
+Briefe von selbst gelöscht werden, gibt es nicht. Ein Brief bleibt gespeichert, bis einer von euch
+beiden sein Konto löscht oder ich eines der beiden Konten entferne – dann verschwindet er bei
+beiden. Nur wenn ein Brief gemeldet wurde, behält die Meldung eine Kopie davon (Abschnitt 3.7).</p>
+<p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO.</p>
+<h3>3.5 Deine Fledermäuse</h3>
+<p>Für jede deiner drei Fledermäuse speichere ich, ob sie zu Hause oder unterwegs ist und wann sie
+zuletzt losgeflogen oder heimgekehrt ist. So sorgt der Server dafür, dass jede Person genau drei
+Fledermäuse hat. Fliegt eine gerade, siehst du in der App, zu wem und wann sie ankommt.</p>
+<p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO.</p>
+<h3>3.6 Blockieren</h3>
+<p>Wenn du jemanden blockierst, speichere ich, wer wen wann blockiert hat. Eure Freundschaft (oder eine
+offene Anfrage) endet, die Person kann dir nicht mehr schreiben und dich nicht mehr anfragen, und
+ihre Briefe sind für dich ausgeblendet, bis du die Blockierung aufhebst. Gelöscht werden die Briefe
+dabei nicht.</p>
+<p>Die blockierte Person bekommt keine Nachricht darüber. Sie merkt aber, dass ihr nicht mehr
+befreundet seid, und die Briefe, die du ihr geschickt hast, bleiben bei ihr. Deine Liste blockierter
+Personen („Blocked couriers“) siehst nur du.</p>
+<p>Eine Blockierung bleibt, bis du sie aufhebst oder einer von euch sein Konto löscht. Nach dem
+Aufheben seid ihr nicht automatisch wieder befreundet.</p>
+<p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO, weil Blockieren eine Funktion der App ist, und Art.
+6 Abs. 1 lit. f DSGVO – das berechtigte Interesse, dich vor Nachrichten zu schützen, die du nicht
+willst.</p>
+<h3>3.7 Melden</h3>
+<p>Du kannst einen Brief oder eine Person melden. Eine Meldung enthält:</p>
+<ul>
+<li>wer gemeldet hat und wer gemeldet wurde,</li>
+<li>den Grund (aus einer Liste) und, wenn du willst, eine Notiz von dir (höchstens 500 Zeichen),</li>
+<li>eine Kopie von Benutzername und Anzeigename der gemeldeten Person, so wie sie zu dem Zeitpunkt
+waren,</li>
+<li>bei einem gemeldeten Brief eine Kopie seines Textes und wann er abgeschickt wurde,</li>
+<li>wann gemeldet wurde, und später meine eigene Notiz dazu, was ich unternommen habe.</li>
+</ul>
+<p>Eine Meldung über dich enthält also auch Angaben, die nicht von dir stammen, sondern von der Person,
+die dich gemeldet hat: den Grund und ihre Notiz.</p>
+<p><strong>Wer eine Meldung sieht:</strong> nur ich; gespeichert ist sie bei Supabase (Abschnitt 7). Auch du kannst
+deine Meldung danach nicht mehr ansehen. Die gemeldete Person erfährt nicht, wer sie gemeldet hat –
+es sei denn, ein Gesetz verpflichtet mich dazu. Ein Brief hat aber nur einen Empfänger: Wenn ich
+wegen eines gemeldeten Briefs etwas unternehme, kann sich der Absender denken, von wem die Meldung
+kam.</p>
+<p>Beim Melden ist „auch blockieren“ schon eingeschaltet. Du kannst es ausschalten, wenn du von der
+Person weiter Briefe bekommen möchtest.</p>
+<p><strong>Was ich mit einer Meldung mache:</strong> Ich lese jede Meldung. Je nachdem, was passiert ist, unternehme
+ich nichts, schreibe der Person eine Verwarnung an die E-Mail-Adresse ihres Kontos oder entferne ihr
+Konto (Abschnitt 3.8). Geht es um eine Drohung, sperre ich das gemeldete Konto sofort vorläufig,
+entferne es aber erst eine Woche später. Vorher schreibe ich der Person, die gemeldet hat, an die
+E-Mail-Adresse ihres Kontos: Mit dem anderen Konto verschwinden alle Briefe zwischen euch, und sie
+soll vorher Kopien machen können. Bei Drohungen oder möglichen Straftaten kann ich eine Meldung an
+die Polizei weitergeben, zusammen mit den Anmeldedaten des gemeldeten Kontos, soweit sie dann noch
+gespeichert sind: seinen Sitzungen und seinen Einträgen im Anmeldeprotokoll, jeweils mit IP-Adresse
+(Abschnitt 3.9).</p>
+<p><strong>Wie lange:</strong> Eine Meldung wird 180 Tage, nachdem sie gemacht wurde, automatisch gelöscht – egal,
+ob sie erledigt ist oder nicht. Löscht eine der beiden Personen vorher ihr Konto, bleibt die Meldung
+trotzdem bis dahin bestehen: ohne die Nutzer-ID der gelöschten Person, aber mit den kopierten Namen,
+dem kopierten Brieftext und der Notiz. Sonst könnte jemand eine Drohung samt dem einzigen Beweis
+zurücknehmen, indem er sein Konto löscht. Gebe ich eine Meldung an die Polizei weiter, bewahrt die
+Polizei ihre Kopie nach ihren eigenen Regeln auf, auch über die 180 Tage hinaus; meine eigene
+exportierte Kopie lösche ich nach der Übergabe.</p>
+<p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO. Mein berechtigtes Interesse – und das aller, die
+Night Courier nutzen – ist, Missbrauch zu verhindern und zu bearbeiten, Menschen und besonders
+Kinder und Jugendliche zu schützen und Beweise aufzubewahren, die ein Opfer brauchen könnte. Muss
+ich eine Meldung herausgeben, weil ein Gesetz mich dazu verpflichtet, ist die Rechtsgrundlage Art. 6
+Abs. 1 lit. c DSGVO.</p>
+<h3>3.8 Entfernte und gesperrte Konten</h3>
+<p>Wenn jemand schwer oder wiederholt gegen die Hausregeln verstößt, entferne ich das Konto. Profil,
+Fledermäuse, Freundschaften, Blockierungen und alle Briefe, die das Konto geschickt oder bekommen
+hat, werden dann gelöscht – auf beiden Seiten. Geht es um eine Drohung, sperre ich das Konto sofort
+vorläufig: Anmelden geht nicht mehr, und die App hört spätestens nach einer Stunde auf zu
+funktionieren; gelöscht wird aber noch nichts. Entfernt wird es eine
+Woche später, damit die Person, die die Drohung gemeldet hat, vorher Kopien machen kann (Abschnitt
+3.7).</p>
+<p>Damit sich dieselbe Person nicht gleich mit derselben E-Mail-Adresse neu anmeldet, sperre ich beim
+Entfernen die Anmeldung des Kontos. Dann bleibt der Kontodatensatz bei Supabase stehen: die
+E-Mail-Adresse, der Hashwert des Passworts und die Zeitpunkte aus Abschnitt 3.1. Er bleibt <strong>zwei
+Jahre ab dem Entfernen</strong> gespeichert; danach löscht ein täglicher Auftrag ihn. Die Sitzungen des
+Kontos enden früher: Ein täglicher Auftrag löscht jede, sobald sie 90 Tage nicht benutzt wurde, und
+ein gesperrtes Konto kann sie nicht mehr benutzen. Seine Einträge im Anmeldeprotokoll werden
+gelöscht, sobald sie 30 Tage alt sind (Abschnitt 3.9).</p>
+<p>Diese Sperre gibt es nur für Konten, die wegen Regelverstößen entfernt werden. Ein Konto, das aus
+einem anderen Grund gelöscht wird – von dir selbst, von mir auf deine Bitte oder von mir in den
+Fällen aus den Abschnitten 3.10 und 10 –, hinterlässt keine Sperre: Seine E-Mail-Adresse ist sofort wieder frei.</p>
+<p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO – das berechtigte Interesse, alle anderen vor
+jemandem zu schützen, der wegen Regelverstößen entfernt wurde.</p>
+<h3>3.9 Anmeldung, Sitzungen und Protokolle</h3>
+<p>Damit du angemeldet bleibst und die App sicher läuft, entstehen bei Supabase technische Daten. Jede
+Anfrage der App an den Server enthält deine IP-Adresse und eine technische Kennung deines Geräts
+oder Betriebssystems (den sogenannten User-Agent).</p>
+<ul>
+<li><strong>Sitzungen.</strong> Für jede Anmeldung entsteht eine Sitzung mit IP-Adresse, User-Agent und
+Zeitpunkten. Wenn du dich abmeldest („Sign out“), werden deine Sitzungen gelöscht, und zwar auf
+allen deinen Geräten gleichzeitig. Mit deinem Konto werden sie ebenfalls gelöscht. Eine Sitzung,
+die <strong>90 Tage</strong> nicht benutzt wurde – auf einem Gerät, auf dem du die App so lange nicht geöffnet
+hast –, löscht ein täglicher Auftrag; dort meldest du dich dann neu an. Erreicht die Abmeldung den
+Server nicht, etwa ohne Netz, meldet die App dich auf deinem Gerät trotzdem ab, aber die Sitzungen
+beim Server bleiben bis dahin; melde dich dann einmal an und wieder ab. Wenn du ein Handy
+verlierst, melde dich auf einem anderen Gerät an und ab oder schreib mir.</li>
+<li><strong>Anmelde-Token.</strong> Während die App geöffnet ist, wird deine Anmeldung etwa einmal pro Stunde
+erneuert. Dabei entsteht jedes Mal ein neues Token, und das alte wird ungültig. Gespeichert bleiben
+die Token höchstens so lange wie die Sitzung, zu der sie gehören.</li>
+<li><strong>Anmeldeprotokoll.</strong> Supabase protokolliert Ereignisse wie Registrierung, Anmeldung, Abmeldung,
+jedes Erneuern der Anmeldung, Anforderung eines neuen Passworts und Passwortänderung, jeweils mit
+Nutzer-ID, E-Mail-Adresse, Zeitpunkt und gegebenenfalls IP-Adresse. Daraus lässt sich ablesen,
+wann du die App benutzt hast. Ein täglicher Auftrag löscht jeden Eintrag nach 30 Tagen. Wenn du
+dein Konto löschst, werden deine Einträge sofort mitgelöscht.</li>
+<li><strong>Server-Protokolle.</strong> Supabase protokolliert Anfragen an den Server: IP-Adresse, Zeitpunkt, die
+aufgerufene Adresse (sie kann deine Nutzer-ID enthalten), User-Agent und Ergebnis, bei Anmeldungen
+auch deine E-Mail-Adresse, außerdem Fehlermeldungen der Datenbank. Briefe, Notizen und Namen
+schickt die App im Inhalt einer Anfrage, nicht in der Adresse; in diese Protokolle gelangen sie
+deshalb normalerweise nicht. Eine Fehlermeldung der Datenbank kann aber einen einzelnen Wert
+enthalten, zum Beispiel einen schon vergebenen Benutzernamen bei der Registrierung. Diese
+Protokolle löscht Supabase nach kurzer Zeit automatisch.</li>
+</ul>
+<p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO, soweit es um deine Anmeldung geht. Im Übrigen Art.
+6 Abs. 1 lit. f DSGVO: Mein berechtigtes Interesse ist, die App sicher und stabil zu betreiben,
+Angriffe und Missbrauch zu erkennen und Fehler zu finden.</p>
+<h3>3.10 E-Mails von Night Courier</h3>
+<p>Night Courier schickt dir automatisch nur E-Mails, die dein Konto betreffen: einen Link zum
+Zurücksetzen deines Passworts, wenn du ihn anforderst, und – sobald das eingeschaltet ist – einen
+Link zum Bestätigen deiner E-Mail-Adresse bei der Registrierung. Die E-Mail enthält einen einmaligen
+Link, der über den Server von Supabase zurück in die App führt. Keine Newsletter, keine Werbung.
+Schreibe ich dir selbst (Abschnitt 3.1), kommt die E-Mail aus meinem Postfach (Abschnitt 3.11).</p>
+<p>Zurzeit wird eine E-Mail-Adresse bei der Registrierung noch nicht bestätigt. Wenn jemand deine
+E-Mail-Adresse ohne dein Wissen für ein Konto benutzt hat, schreib mir; dann lösche ich dieses
+Konto. Sobald die Bestätigung eingeschaltet ist, löscht ein täglicher Auftrag jede Registrierung,
+deren E-Mail-Adresse nicht innerhalb von 7 Tagen bestätigt wurde, samt Profil.</p>
+<p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO.</p>
+<h3>3.11 Wenn du mir schreibst</h3>
+<p>Wenn du mir schreibst – über „Contact“ in der App oder an <a href="mailto:vinnivinz@live.de">vinnivinz@live.de</a>, mit einer Frage, einer
+Ergänzung zu einer Meldung oder einer Anfrage zu deinen Daten –, verarbeite ich deine
+E-Mail-Adresse, deinen Namen, falls er in der E-Mail steht, und was du schreibst. Mein Postfach
+liegt bei Microsoft (Outlook.com). Ich bewahre deine Nachricht so lange auf, wie ich sie für dein
+Anliegen brauche, und lösche sie danach.</p>
+<p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO, wenn es um dein Konto geht; Art. 6 Abs. 1 lit. c
+DSGVO, wenn du deine Datenschutzrechte ausübst, weil ich dann gesetzlich verpflichtet bin zu
+antworten; sonst Art. 6 Abs. 1 lit. f DSGVO – mein berechtigtes Interesse, Fragen zu beantworten und
+Meldungen zu bearbeiten.</p>
+<h3>3.12 Testversionen über TestFlight und Google Play</h3>
+<p>Night Courier gibt es nur als Testversion: auf dem iPhone über Apples App TestFlight und auf Android
+über den internen Test von Google Play. Apple und Google verarbeiten dabei Daten nach ihren eigenen
+Datenschutzbestimmungen, zum Beispiel zu deinem Apple Account oder deinem Google-Konto.</p>
+<ul>
+<li><strong>TestFlight:</strong> Apple zeigt mir Angaben dazu, wann die App installiert und geöffnet wurde,
+Absturzberichte mit Gerätemodell und iOS-Version und Feedback, das du über TestFlight schickst –
+Text und Screenshots. Achte bitte darauf, dass auf einem Screenshot kein Brief zu sehen ist, den
+du nicht zeigen möchtest. Welche Angaben zu dir als Tester ich darüber hinaus sehe, hängt davon
+ab, wie du eingeladen wurdest.</li>
+<li><strong>Google Play:</strong> Für den internen Test trage ich die E-Mail-Adresse deines Google-Kontos in eine
+Testerliste in der Google Play Console ein. Google zeigt mir außerdem Berichte über Abstürze und
+hängende App-Fenster mit Gerätemodell und Android-Version.</li>
+</ul>
+<p>Deine Adresse in der Testerliste lösche ich, sobald du mir schreibst, dass du nicht mehr testen
+möchtest. Wie lange Apple und Google ihre Daten aufbewahren, regeln ihre eigenen Bestimmungen.</p>
+<p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO, um dir die App zur Verfügung zu stellen, und Art. 6
+Abs. 1 lit. f DSGVO – mein berechtigtes Interesse, Abstürze zu finden und zu beheben.</p>
+<h3>3.13 Was ich nicht erhebe</h3>
+<ul>
+<li><strong>Dein Alter.</strong> Bei der Registrierung bestätigst du nur, dass du mindestens 13 bist und, falls du
+unter 16 bist, die Erlaubnis deiner Eltern oder anderer Erziehungsberechtigter hast. Gespeichert
+wird das nicht.</li>
+<li><strong>Den Standort deines Geräts, das Adressbuch deines Handys, Fotos, Kamera oder Mikrofon.</strong> Auf
+nichts davon bittet die App um Zugriff. (Die Stadt, die du aus einer Liste wählst, steht in
+Abschnitt 3.2, deine Freunde, Anfragen und Blockierungen in der App in den Abschnitten 3.3 und
+3.6. In den Datenschutzangaben, die Apple und Google in ihren Stores zeigen, erscheinen sie unter
+„Standort“ und „Kontakte“.)</li>
+<li><strong>Geräte- oder Werbe-IDs, Push-Token, Cookies.</strong> Gibt es in der App nicht.</li>
+<li><strong>Analyse, Werbung, Tracking, Absturzmeldungen aus der App.</strong> Die App enthält keine solchen
+Programmteile. Sie verbindet sich nur mit dem Night-Courier-Server bei Supabase. Wenn du auf
+„Contact“ oder „Privacy policy“ tippst, öffnet sich deine E-Mail-App oder dein Browser.</li>
+</ul>
+<h2>4. Was andere sehen können</h2>
+<ul>
+<li><strong>Deine E-Mail-Adresse</strong> sieht kein anderer Nutzer, nur du, ich als Betreiber und Supabase als
+mein Auftragsverarbeiter.</li>
+<li><strong>Wenn du jemandem eine Anfrage schickst</strong>, sieht die Person deinen Benutzernamen und deinen
+Anzeigenamen. Du siehst von ihr nur den Benutzernamen, bis sie annimmt.</li>
+<li><strong>Deine Freunde</strong> sehen deinen Benutzernamen, deinen Anzeigenamen, deine Stadt mit Land und wie
+lange eine Fledermaus zu dir fliegt.</li>
+<li><strong>Wer mit dir Briefe geschrieben hat</strong>, sieht bei jedem Brief deinen Benutzernamen, deinen
+aktuellen Anzeigenamen und die Start- und Zielstadt – auch dann noch, wenn ihr nicht mehr
+befreundet seid, solange es den Brief gibt. Änderst du deinen Anzeigenamen, steht auch auf alten
+Briefen der neue.</li>
+<li><strong>Wer dir einen Brief schickt</strong>, sieht, wann er gelandet ist, aber nie, ob und wann du ihn
+geöffnet hast.</li>
+<li><strong>Wer dich blockiert hat</strong>, sieht dich nur noch mit deinem Benutzernamen, nicht mit deinem
+Anzeigenamen.</li>
+<li><strong>Wer deinen Benutzernamen genau kennt</strong>, kann herausfinden, dass es ihn gibt, indem er dir eine
+Anfrage schickt. Mehr erfährt er dadurch nicht, bis du annimmst.</li>
+<li><strong>Andere Nutzer</strong> sehen nicht, wen du blockiert oder gemeldet hast (auch wenn die Person es sich
+denken kann, Abschnitte 3.6 und 3.7), ob du gerade online bist oder ob du gerade schreibst.</li>
+</ul>
+<p>Deine zufällige Nutzer-ID bekommt außerdem die App aller, die mit dir befreundet sind, dir eine
+Anfrage geschickt oder von dir eine bekommen haben, mit dir Briefe geschrieben oder dich blockiert
+haben; in der App angezeigt wird sie nicht.</p>
+<h2>5. Was auf deinem Gerät gespeichert wird</h2>
+<ul>
+<li>Die App speichert auf deinem Gerät nur deine Anmeldung (die „Sitzung“). Sie enthält ein
+Zugangs-Token mit deiner Nutzer-ID und deiner E-Mail-Adresse, ein Token zum Erneuern der Anmeldung
+und einige Angaben zu deinem Konto. Bis die Kopie deiner Namen von der Registrierung gelöscht ist
+(Abschnitt 3.1) und deine Anmeldung danach einmal erneuert wurde, stehen auch diese Namen darin.</li>
+<li><strong>Auf dem iPhone</strong> liegt sie im Schlüsselbund (Keychain) von iOS, lesbar nur, solange das iPhone
+entsperrt ist, und nur auf diesem Gerät: Auf ein neues iPhone wird sie nicht mitgenommen, auch
+nicht mit einem Backup; dort meldest du dich neu an. Es kann sein, dass sie nach dem Löschen der
+App im Schlüsselbund bleibt – melde dich vorher ab, wenn du sichergehen willst.</li>
+<li><strong>Auf Android</strong> liegt sie verschlüsselt mit dem Android-Keystore. Sie ist von Backups und von der
+Übertragung auf ein neues Gerät ausgenommen.</li>
+<li>Beim Abmelden und nach dem Löschen deines Kontos löscht die App die Sitzung von deinem Gerät, auch
+wenn der Server gerade nicht erreichbar ist.</li>
+<li>Sonst speichert die App nichts auf deinem Gerät. Briefe, Entwürfe, Freundeslisten und Meldungen
+sind nur so lange auf dem Gerät, wie die App geöffnet ist. Ein angefangener Brief ist weg, wenn du
+die App schließt.</li>
+<li>Was dein Gerät selbst tut, liegt außerhalb der App: Die App-Übersicht kann zum Beispiel ein Bild
+eines geöffneten Briefs zeigen, die Tastatur lernt Wörter, die du tippst, und ein Passwort-Manager
+kann anbieten, dein Passwort zu speichern.</li>
+</ul>
+<h2>6. Rechtsgrundlagen im Überblick</h2>
+<p>Das sind die Rechtsgrundlagen nach der DSGVO. Das DSG verlangt keine solche Grundlage für jede
+Bearbeitung (Abschnitt 1).</p>
+<ul>
+<li><strong>Art. 6 Abs. 1 lit. b DSGVO (Vertrag):</strong> alles, was nötig ist, um dir die App bereitzustellen –
+Konto, Profil, Stadt, Freundschaften, Briefe, Fledermäuse, Blockieren, Anmeldung und die E-Mails
+zu deinem Konto.</li>
+<li><strong>Art. 6 Abs. 1 lit. f DSGVO (berechtigte Interessen):</strong> Sicherheit (Sitzungen und Protokolle),
+der Umgang mit Missbrauch (Meldungen, Verwarnungen, Entfernen von Konten), das Aufbewahren von
+Meldungen für 180 Tage, das Sperren entfernter Konten für zwei Jahre ab dem Entfernen, die
+freiwillige Weitergabe einer Meldung an die Polizei, Absturzberichte und der Aufruf der Webseiten
+bei GitHub Pages (Abschnitt 7). Die Interessen dahinter:
+eine sichere App, Schutz der Menschen, die sie nutzen – besonders der Kinder und Jugendlichen –,
+und Beweise für Opfer.</li>
+<li><strong>Art. 6 Abs. 1 lit. c DSGVO (rechtliche Pflicht):</strong> wenn ein Gesetz mich verpflichtet, Daten
+herauszugeben, etwa an Polizei, Staatsanwaltschaft oder Gericht, und wenn ich deine Anfragen zu
+deinen Datenschutzrechten beantworte.</li>
+</ul>
+<h2>7. Wer deine Daten bekommt</h2>
+<p>Ich verkaufe keine Daten und gebe sie nicht für Werbung weiter. Empfänger sind nur:</p>
+<ul>
+<li><strong>Supabase Inc. (USA).</strong> Supabase betreibt für mich die Datenbank, die Anmeldung, den Server und
+die Protokolle, als Auftragsverarbeiter nach Art. 9 DSG und Art. 28 DSGVO auf Grundlage eines
+Vertrags zur Auftragsverarbeitung. Mein Projekt läuft in der Supabase-Region Zürich (Schweiz) auf
+Servern von Amazon Web Services. Supabase setzt weitere Unterauftragsverarbeiter ein und
+veröffentlicht eine Liste davon auf supabase.com. Datenschutzerklärung:
+<a href="https://supabase.com/privacy">https://supabase.com/privacy</a></li>
+<li><strong>E-Mail-Versand.</strong> Die E-Mails zu deinem Konto (Abschnitt 3.10) verschickt Supabase oder ein
+E-Mail-Versanddienst, der als mein Auftragsverarbeiter handelt. Er erhält deine E-Mail-Adresse und
+den Link in der E-Mail und führt ein Versandprotokoll.</li>
+<li><strong>Microsoft.</strong> Microsoft betreibt mein E-Mail-Postfach (Outlook.com) und erhält so, was du mir
+schreibst und was ich dir schreibe – nach seinen eigenen Datenschutzbestimmungen:
+<a href="https://privacy.microsoft.com/de-de/privacystatement">https://privacy.microsoft.com/de-de/privacystatement</a></li>
+<li><strong>Apple und Google.</strong> Sie verteilen die Testversionen (Abschnitt 3.12) nach ihren eigenen
+Datenschutzbestimmungen: <a href="https://www.apple.com/de/legal/privacy/">https://www.apple.com/de/legal/privacy/</a> und
+<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+<li><strong>GitHub, Inc. (USA).</strong> Die Webseiten <a href="https://vnznznznz.github.io/night-courier/privacy-policy.de.html">https://vnznznznz.github.io/night-courier/privacy-policy.de.html</a> und <a href="https://vnznznznz.github.io/night-courier/">https://vnznznznz.github.io/night-courier/</a> liegen bei
+GitHub Pages. Wenn du sie aufrufst, erhält GitHub wie jeder Webserver deine IP-Adresse und deinen
+User-Agent und speichert deine IP-Adresse in Protokollen, für die Sicherheit und den Betrieb des
+Dienstes (Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO – ohne diese Daten lässt sich eine Webseite
+nicht ausliefern). Die Seiten selbst setzen keine Cookies und laden nichts von anderen Websites.
+Wie lange GitHub seine Protokolle aufbewahrt, regeln seine eigenen Datenschutzbestimmungen:
+<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement</a></li>
+<li><strong>Polizei und Behörden</strong> – nur wenn ich eine Meldung mit den Anmeldedaten des gemeldeten Kontos
+weitergebe (Abschnitt 3.7) oder ein Gesetz mich zur Herausgabe verpflichtet.</li>
+<li><strong>Andere Nutzer</strong> sehen, was in Abschnitt 4 steht.</li>
+</ul>
+<p>Keine Daten von dir erhalten: Expo, ein Dienst, mit dem ich die App baue, und GeoNames, von dem die
+Liste der Städte stammt – sie liegt in der Datenbank von Night Courier, und GeoNames wird nie
+gefragt.</p>
+<h2>8. In welchen Ländern deine Daten verarbeitet werden</h2>
+<ul>
+<li><strong>Schweiz.</strong> Die Datenbank liegt in Zürich (Supabase-Region eu-central-2), also in dem Land, in
+dem ich lebe. Sie dort zu speichern, ist für mich keine Bekanntgabe ins Ausland. Für Menschen in
+der EU und im EWR: Die Schweiz gehört nicht zur EU, aber die EU-Kommission hat festgestellt, dass
+dort ein angemessenes Datenschutzniveau besteht: Entscheidung 2000/518/EG, die nach Art. 45 Abs. 9
+DSGVO weiter gilt. Bei ihrer Überprüfung im Januar 2024 hat die Kommission festgestellt, dass das
+Schutzniveau in der Schweiz weiterhin angemessen ist.</li>
+<li><strong>USA.</strong> Supabase Inc. ist ein US-Unternehmen. Greifen Mitarbeiter oder Systeme von Supabase aus
+den USA auf Daten zu, zum Beispiel für Wartung oder Support, oder verarbeitet ein
+Unterauftragsverarbeiter von Supabase dort Daten, gehen Daten in die USA. Ebenso bei Microsoft
+(mein Postfach, Abschnitt 3.11) und GitHub (die Webseiten, Abschnitt 7), beides US-Unternehmen.
+Nach dem DSG ist das so abgesichert: Für Unternehmen, die nach dem Swiss-US Data Privacy Framework
+zertifiziert sind, hat der Bundesrat ein angemessenes Datenschutzniveau anerkannt; das gilt seit
+dem 15. September 2024 (Art. 16 Abs. 1 DSG). Bei Supabase gelten sonst die
+Standardvertragsklauseln im Vertrag zur Auftragsverarbeitung (Art. 16 Abs. 2 DSG). Für Menschen in
+der EU und im EWR sichern diese Standardvertragsklauseln der EU-Kommission den Zugriff von
+Supabase aus den USA ab (Art. 46 Abs. 2 lit. c DSGVO); für Microsoft und GitHub gilt, soweit sie
+nach dem EU-US Data Privacy Framework zertifiziert sind, der Angemessenheitsbeschluss der
+EU-Kommission vom 10. Juli 2023 (Durchführungsbeschluss (EU) 2023/1795, Art. 45 DSGVO). Eine Kopie
+der Standardvertragsklauseln kannst du bei mir anfordern.</li>
+<li><strong>Apple, Google, Microsoft und GitHub</strong> können Daten auch in den USA und anderen Ländern
+verarbeiten. Wie sie das absichern, steht in ihren eigenen Datenschutzbestimmungen.</li>
+</ul>
+<h2>9. Wie lange ich Daten speichere</h2>
+<table>
+<thead>
+<tr>
+<th>Was</th>
+<th>Wie lange</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Konto, Profil, Stadt, Fledermäuse</td>
+<td>bis du dein Konto löschst oder ich es entferne</td>
+</tr>
+<tr>
+<td>Kopie der Namen von der Registrierung</td>
+<td>höchstens einen Tag (Abschnitt 3.1)</td>
+</tr>
+<tr>
+<td>Vorherige Stadt und Zeitpunkt eines Umzugs</td>
+<td>höchstens zwei Tage nach dem Wechsel (Abschnitt 3.2)</td>
+</tr>
+<tr>
+<td>Briefe</td>
+<td>bis du oder die andere Person das Konto löscht oder ich eines der beiden Konten entferne; eine Frist gibt es nicht</td>
+</tr>
+<tr>
+<td>Freundschaften und Anfragen</td>
+<td>bis sie beendet, abgelehnt oder zurückgezogen werden, oder bis zur Kontolöschung</td>
+</tr>
+<tr>
+<td>Blockierungen</td>
+<td>bis du sie aufhebst, oder bis zur Kontolöschung</td>
+</tr>
+<tr>
+<td>Meldungen</td>
+<td>180 Tage ab der Meldung, auch wenn ein Konto vorher gelöscht wird</td>
+</tr>
+<tr>
+<td>An die Polizei weitergegebene Meldungen</td>
+<td>bei der Polizei nach deren Regeln; meine Exportkopie lösche ich nach der Übergabe</td>
+</tr>
+<tr>
+<td>Kontodatensatz eines gesperrten, entfernten Kontos</td>
+<td>zwei Jahre ab dem Entfernen, dann automatisch gelöscht (Abschnitt 3.8)</td>
+</tr>
+<tr>
+<td>Sitzungen</td>
+<td>bis zum Abmelden oder zur Kontolöschung; sonst löscht sie ein täglicher Auftrag, sobald sie 90 Tage nicht benutzt wurde</td>
+</tr>
+<tr>
+<td>Anmelde-Token</td>
+<td>höchstens so lange wie die Sitzung</td>
+</tr>
+<tr>
+<td>Anmeldeprotokoll</td>
+<td>30 Tage; deine Einträge werden mit deinem Konto gelöscht</td>
+</tr>
+<tr>
+<td>Registrierung, deren E-Mail-Adresse nie bestätigt wurde</td>
+<td>7 Tage, sobald die Bestätigung eingeschaltet ist (Abschnitt 3.10)</td>
+</tr>
+<tr>
+<td>Server-Protokolle bei Supabase</td>
+<td>kurz, dann automatisch gelöscht (Abschnitt 3.9)</td>
+</tr>
+<tr>
+<td>Sicherungskopien der Datenbank</td>
+<td>gelöschte Daten können darin enthalten sein, bis die Sicherung automatisch überschrieben wird</td>
+</tr>
+<tr>
+<td>E-Mails an mich</td>
+<td>solange ich sie für dein Anliegen brauche</td>
+</tr>
+<tr>
+<td>Testerliste bei Google Play</td>
+<td>bis du mir schreibst, dass du nicht mehr testen möchtest</td>
+</tr>
+</tbody></table>
+<h2>10. Kinder und Jugendliche – und ihre Eltern</h2>
+<ul>
+<li>Night Courier ist ab <strong>13 Jahren</strong>. Wer <strong>unter 16</strong> ist, braucht die Erlaubnis der Eltern oder
+anderer Erziehungsberechtigter. So steht es in den Hausregeln. Die 16 habe ich gewählt, weil das
+die höchste Altersgrenze ist, die ein EU-Land nach Art. 8 DSGVO dafür festlegt, dass man einem
+Online-Dienst selbst zustimmen kann. Das Schweizer Recht kennt keine feste Grenze; dort kommt es
+darauf an, ob jemand urteilsfähig ist.</li>
+<li>Ich prüfe und speichere das Alter nicht. Bei der Registrierung bestätigt man es nur.</li>
+<li>Die App ist so gebaut, dass Fremde niemandem schreiben können: Briefe gibt es nur zwischen
+Menschen, die sich gegenseitig als Freunde angenommen haben. Wer den genauen Benutzernamen kennt,
+kann eine Freundschaftsanfrage schicken; dabei sieht man nur dessen Benutzernamen und Anzeigenamen
+und kann die Person blockieren und melden. Es gibt keine öffentlichen Profile, keine Werbung und
+kein Tracking. Sexuelle Inhalte, an denen Minderjährige beteiligt sind oder die an Minderjährige
+geschickt werden, sind verboten. Wer dagegen verstößt, muss damit rechnen, dass ich sein Konto
+entferne.</li>
+<li><strong>Was Eltern tun können:</strong> diese Erklärung und die Hausregeln mit ihrem Kind lesen; zusammen mit
+ihrem Kind das Konto löschen („Your profile“ → „Delete my account“); und mir schreiben, wenn sie
+Fragen haben, etwas melden möchten oder ihr Kind ohne ihre Erlaubnis ein Konto angelegt hat. Ist
+ein Kind unter 16 ohne Erlaubnis angemeldet, lösche ich das Konto auf Bitte der Eltern. Vorher
+frage ich gegebenenfalls nach, um sicherzugehen, dass die Bitte wirklich von den Eltern kommt.
+Erfahre ich, dass jemand jünger als 13 ist, lösche ich das Konto – ohne die E-Mail-Adresse zu
+sperren (Abschnitt 3.8 gilt nur für Konten, die wegen Regelverstößen entfernt werden).</li>
+<li>Gut zu wissen: Wird ein Konto gelöscht, sind alle Briefe weg. Wer einen Brief aufbewahren möchte,
+zum Beispiel als Beweis, macht vorher einen Screenshot.</li>
+</ul>
+<h2>11. Deine Rechte</h2>
+<p>Du hast nach der DSGVO diese Rechte:</p>
+<ul>
+<li><strong>Auskunft (Art. 15):</strong> Du kannst erfahren, welche Daten ich über dich habe, und eine Kopie
+bekommen.</li>
+<li><strong>Berichtigung (Art. 16):</strong> Anzeigenamen und Stadt kannst du selbst im Profil ändern. Für
+Benutzername oder E-Mail-Adresse schreib mir.</li>
+<li><strong>Löschung (Art. 17):</strong> Dein Konto löschst du selbst in der App: „Your profile“ → „Delete my
+account“. Das geht sofort und endgültig. Gelöscht werden dein Konto, dein Profil, deine
+Fledermäuse, Freundschaften, Blockierungen und alle Briefe, die du geschickt oder bekommen hast –
+auch bei den anderen, und deine Einträge im Anmeldeprotokoll. Was danach noch bleibt: Meldungen
+(bis 180 Tage, Abschnitt 3.7), Server-Protokolle und Sicherungskopien, bis sie automatisch
+gelöscht werden, E-Mails zwischen dir und mir, und was Apple oder Google zu deiner Testversion
+gespeichert haben (Abschnitt 3.12).</li>
+<li><strong>Einschränkung (Art. 18):</strong> Du kannst verlangen, dass ich Daten vorerst nur noch speichere und
+sonst nicht nutze, zum Beispiel solange geklärt wird, ob sie richtig sind.</li>
+<li><strong>Datenübertragbarkeit (Art. 20):</strong> Du kannst die Daten, die du mir gegeben hast, in einem
+gängigen, maschinenlesbaren Format bekommen. Eine Export-Funktion in der App gibt es nicht;
+schreib mir.</li>
+</ul>
+<p><strong>Nach dem Schweizer DSG</strong> hast du ähnliche Rechte: Auskunft (Art. 25 DSG – kostenlos und in der
+Regel innerhalb von 30 Tagen), Herausgabe oder Übertragung deiner Daten (Art. 28 DSG) und
+Berichtigung (Art. 32 Abs. 1 DSG). Außerdem kannst du verlangen, notfalls vor Gericht, dass eine
+bestimmte Bearbeitung unterbleibt, dass ich deine Daten nicht an Dritte weitergebe oder dass ich sie
+lösche (Art. 32 Abs. 2 DSG).</p>
+<p><strong>Beschwerde.</strong> Für mich zuständig ist der Eidgenössische Datenschutz- und
+Öffentlichkeitsbeauftragte (EDÖB), Feldeggweg 1, 3003 Bern, Schweiz, <a href="https://www.edoeb.admin.ch">www.edoeb.admin.ch</a>. An ihn
+kannst du dich wenden, wenn du meinst, dass ich gegen das DSG verstoße. Wohnst du in der EU oder im
+EWR, kannst du dich außerdem bei einer Datenschutz-Aufsichtsbehörde beschweren (Art. 77 DSGVO),
+besonders in dem Land, in dem du wohnst oder arbeitest oder in dem der Verstoß passiert ist. In
+Deutschland ist das die Datenschutzbehörde deines Bundeslands. Am liebsten ist mir aber, du
+schreibst mir zuerst.</p>
+<blockquote>
+<p><strong>Widerspruchsrecht (Art. 21):</strong> Soweit ich Daten auf Grundlage berechtigter Interessen verarbeite
+(Art. 6 Abs. 1 lit. f DSGVO), kannst du dem jederzeit aus Gründen widersprechen, die sich aus
+deiner besonderen Situation ergeben. Dann verarbeite ich diese Daten nicht mehr – es sei denn, ich
+kann zwingende schutzwürdige Gründe nachweisen, die deine Interessen überwiegen, oder die
+Verarbeitung dient der Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen. Bei einer
+Meldung über eine Drohung kann das zum Beispiel so sein.</p>
+</blockquote>
+<p><strong>So geht&#39;s:</strong> Schreib an <a href="mailto:vinnivinz@live.de">vinnivinz@live.de</a>, am besten von der E-Mail-Adresse, mit der du bei Night
+Courier angemeldet bist – damit ich sicher bin, dass die Anfrage von dir kommt. Sonst frage ich
+nach. Ich antworte innerhalb von 30 Tagen. Das kostet nichts.</p>
+<h2>12. Keine automatisierten Entscheidungen</h2>
+<p>Es gibt keine automatisierten Entscheidungen und kein Profiling im Sinne von Art. 22 DSGVO. Der
+Server rechnet zwar automatisch aus, wie lange eine Fledermaus fliegt, aber das ist keine
+Entscheidung über dich. Über Meldungen, Verwarnungen und das Entfernen von Konten entscheide ich
+selbst, als Mensch.</p>
+<h2>13. Sicherheit</h2>
+<ul>
+<li>Alle Verbindungen zwischen App und Server sind verschlüsselt (HTTPS); eine unverschlüsselte
+Verbindung zum Server baut die App gar nicht erst auf.</li>
+<li>Supabase verschlüsselt die gespeicherten Daten (AES-256).</li>
+<li>Passwörter sind nur als Hashwert gespeichert.</li>
+<li>Die Regeln, wer was sehen darf, setzt die Datenbank selbst durch, nicht nur die App. Jede Person
+kommt nur an ihre eigenen Daten und an das, was Abschnitt 4 beschreibt.</li>
+<li>Die App enthält nur einen öffentlichen Zugangsschlüssel, der ohne Anmeldung keine persönlichen
+Daten öffnet; den Verwaltungsschlüssel enthält sie nie.</li>
+<li>Deine Anmeldung liegt im Schlüsselbund bzw. Keystore deines Geräts (Abschnitt 5).</li>
+<li>Verwaltungszugang zur Datenbank habe nur ich (und Supabase als technischer Dienstleister).</li>
+<li>Eine Ende-zu-Ende-Verschlüsselung der Briefe gibt es nicht (Abschnitt 3.4).</li>
+</ul>
+<p>Du kannst mithelfen: Nutze ein Passwort, das du nirgends sonst verwendest, und melde dich auf
+Geräten ab, die auch andere benutzen. Sollte trotzdem einmal etwas schiefgehen und Daten in falsche
+Hände geraten, melde ich das so rasch wie möglich dem EDÖB, wenn es voraussichtlich zu einem hohen
+Risiko für die Betroffenen führt (Art. 24 DSG), und, soweit es um Menschen in der EU und im EWR
+geht, der zuständigen Aufsichtsbehörde, so wie es Art. 33 DSGVO verlangt. Wenn nötig, informiere
+ich auch dich (Art. 24 Abs. 4 DSG, Art. 34 DSGVO).</p>
+<h2>14. Musst du Daten angeben?</h2>
+<p>Gesetzlich bist du nicht verpflichtet, mir Daten zu geben. Ohne E-Mail-Adresse, Passwort,
+Benutzernamen und Anzeigenamen kannst du aber kein Konto anlegen, und ohne Stadt können deine
+Fledermäuse nicht fliegen. Was du in Briefe schreibst, entscheidest du selbst.</p>
+<h2>15. Änderungen dieser Erklärung</h2>
+<p>Ich passe diese Erklärung an, wenn sich die App oder die Rechtslage ändert. Die aktuelle Fassung
+steht immer unter <a href="https://vnznznznz.github.io/night-courier/privacy-policy.de.html">https://vnznznznz.github.io/night-courier/privacy-policy.de.html</a> und ist in der App über „Privacy policy“ erreichbar. Über
+wichtige Änderungen sage ich vorher Bescheid, zum Beispiel per E-Mail.</p>
+<p><strong>Stand: 10. November 2026</strong></p>
+
+</main>
+</body>
+</html>
