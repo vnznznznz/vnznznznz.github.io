@@ -2,10 +2,29 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="refresh" content="0; url=night-courier/">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Night Courier</title>
-<meta http-equiv="refresh" content="0; url=night-courier/">
-<style>body{margin:0;font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:#fbfaf7;color:#1d1b26}main{max-width:46rem;margin:0 auto;padding:2rem 16px}a{color:#4b3f8f}@media (prefers-color-scheme:dark){body{background:#14121c;color:#ece9f5}a{color:#b3a7f5}}</style>
+<style>
+:root { --bg: #fbfaf7; --fg: #1d1b26; --muted: #5d5a6b; --line: #dedbe6; --accent: #4b3f8f; color-scheme: light dark; }
+@media (prefers-color-scheme: dark) { :root { --bg: #14121c; --fg: #ece9f5; --muted: #a9a5ba; --line: #2f2b3d; --accent: #b3a7f5; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 46rem; margin: 0 auto; padding: 2rem 16px 4rem; }
+h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 .5rem; }
+h2 { font-size: 1.35rem; margin: 2.5rem 0 .5rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+h3 { font-size: 1.1rem; margin: 1.75rem 0 .25rem; }
+a { color: var(--accent); overflow-wrap: anywhere; }
+table { border-collapse: collapse; width: 100%; display: block; overflow-x: auto; font-size: .95rem; }
+th, td { border: 1px solid var(--line); padding: .45rem .6rem; text-align: left; vertical-align: top; }
+th { background: color-mix(in srgb, var(--line) 40%, transparent); }
+code { font-size: .9em; }
+nav { font-size: .95rem; margin-bottom: 1.5rem; color: var(--muted); }
+</style>
 </head>
-<body><main><p><a href="night-courier/">Night Courier – help, contact and privacy</a></p></main></body>
+<body>
+<main>
+<p><a href="night-courier/">Night Courier – help, contact and privacy</a></p>
+</main>
+</body>
 </html>
