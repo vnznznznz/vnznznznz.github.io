@@ -19,13 +19,15 @@ th, td { border: 1px solid var(--line); padding: .45rem .6rem; text-align: left;
 th { background: color-mix(in srgb, var(--line) 40%, transparent); }
 code { font-size: .9em; }
 nav { font-size: .95rem; margin-bottom: 1.5rem; color: var(--muted); }
+.notice { margin: 0 0 1.5rem; padding: .7rem .9rem; border: 1px solid var(--line); border-left: .3rem solid var(--accent); }
 </style>
 </head>
 <body>
 <main>
 <nav><a href="index.html">Help and contact</a> · <a href="privacy-policy.de.html" hreflang="de">Deutsche Fassung</a></nav>
+<p class="notice" role="note"><strong>Night Courier has not started yet.</strong> This policy describes how the app will handle your data from the day it starts. Until then there are no accounts, and the app processes no personal data.</p>
 <h1>Privacy policy for Night Courier</h1>
-<p><strong>Effective: 10 November 2026</strong></p>
+<p><strong>Effective: 21 November 2026</strong></p>
 <p>This is an English translation. The German version is the binding one; where the two differ, the
 German version prevails.</p>
 <h2>In short</h2>
@@ -44,9 +46,9 @@ signing in and in logs.</li>
 8). This policy and the support page are hosted by GitHub, also a US service.</li>
 <li>Letters are not end-to-end encrypted. Technically, Supabase and I could read them. I read letters
 only when they are reported to me, or when I cannot fix a technical fault any other way.</li>
-<li>You can delete your account in the app at any time. Every letter you sent or received goes with
-it, including from the friends you wrote with. Some things remain for a while afterwards, above
-all reports: for up to 180 days (section 11).</li>
+<li>You can delete your account in the app at any time, unless I have suspended it (section 3.8).
+Every letter you sent or received goes with it, including from the friends you wrote with. Some
+things remain for a while afterwards, above all reports: for up to 180 days (section 11).</li>
 <li>Night Courier is for people aged 13 and over. Anyone under 16 needs the permission of a parent or
 guardian.</li>
 <li>You have rights, such as access and erasure. Just write to me: <a href="mailto:vinnivinz@live.de">vinnivinz@live.de</a>.</li>
@@ -80,15 +82,15 @@ no public profile and no way to write to a stranger.</p>
 <h3>3.1 Your account</h3>
 <p>When you sign up, you enter your email address, a password, a username and a display name.</p>
 <ul>
-<li><strong>Email address.</strong> You sign in with it, and that is where an email goes if you forget your
-password. I also use it to write to you when I need to – for example a warning after a report, a
-message when you have reported a threat (section 3.7), or notice of an important change to this
-policy (section 15). Other users never see your email address.</li>
+<li><strong>Email address.</strong> You sign in with it, and that is where the email with a code goes if you
+forget your password (section 3.10). I also use it to write to you when I need to – for example
+a warning after a report, a message when you have reported a threat (section 3.7), or notice of
+an important change to this policy (section 15). Other users never see your email address.</li>
 <li><strong>Password.</strong> Only a so-called hash (bcrypt) is stored. Nobody can work your password out from it,
 not even me. The app itself never stores your password.</li>
 <li><strong>Account details.</strong> Your account has a random user ID and some times: when the account was
-created, when you last signed in, when your email address counts as confirmed and when a
-password-reset email was last sent – and, if it comes to that, a ban (section 3.8).</li>
+created, when you last signed in, when your email address counts as confirmed and when an email
+with a code was last sent to it – and, if it comes to that, a ban (section 3.8).</li>
 <li><strong>A copy of your names from sign-up.</strong> Supabase also keeps the username and display name you enter
 at sign-up in your account record. Your profile is made from it; after that the copy is not
 needed. A daily job deletes it, at the latest one day after sign-up. Until then it is also in the
@@ -99,15 +101,20 @@ is needed to provide the app to you as the house rules describe.</p>
 <h3>3.2 Your profile and your city</h3>
 <ul>
 <li><strong>Username.</strong> How friends find you: anyone who wants to send you a friend request has to know your
-exact username. It cannot be changed in the app.</li>
+exact username. It cannot be changed.</li>
 <li><strong>Display name.</strong> The name your friends see, and anyone you send a request to. You can change it
 in your profile at any time.</li>
 <li><strong>Your city.</strong> You choose it from a list. The app never asks for your location and does not use
 GPS. From the distance between two cities the server works out how long a bat flies.</li>
-<li><strong>Moving.</strong> A new city only becomes the one your bats fly from after 24 hours – otherwise anyone
-could &quot;borrow&quot; a friend&#39;s city for one short flight. To make that work, when you change city I
-store your previous city and when you changed. Once the 24 hours are over, a daily job deletes
-both, at the latest two days after the change.</li>
+<li><strong>Moving.</strong> Until a letter has gone to or from you, a new city counts at once, as your first one
+did: there is no flight yet that a move could shorten. After that, a new city only becomes the
+one your bats fly from after 24 hours – otherwise anyone could &quot;borrow&quot; a friend&#39;s city for one
+short flight. To make that work, I note on your profile whether a letter has ever gone to or from
+you; the note stays as long as your account, even after the letters themselves are gone. And
+when you change city after that, I store your previous city and when you changed. Once the 24
+hours are over, a daily job deletes both, at the latest two days after the change.</li>
+<li><strong>Times.</strong> I also store when your profile was created and when it last changed. Setting the note
+about your first letter counts as a change, and so does the daily job&#39;s tidying up after a move.</li>
 </ul>
 <p><strong>Legal basis:</strong> Art. 6(1)(b) GDPR.</p>
 <h3>3.3 Friendships and requests</h3>
@@ -115,7 +122,12 @@ both, at the latest two days after the change.</li>
 An open request stays until it is accepted, declined or withdrawn; it does not expire on its own.
 When a request is declined or withdrawn, or a friendship is ended or broken off by a block, I delete
 the record.</p>
-<p><strong>Legal basis:</strong> Art. 6(1)(b) GDPR.</p>
+<p>You can make at most 20 new friend requests an hour. To keep to that, I store for your account when
+the hour of your latest requests began and how many new requests you made in it – not whom you
+asked. A daily job deletes this once that hour began more than a day ago, at the latest two days
+after it began; it also goes with your account.</p>
+<p><strong>Legal basis:</strong> Art. 6(1)(b) GDPR; for the count of new requests, Art. 6(1)(f) GDPR – the
+legitimate interest in keeping anyone from flooding others with friend requests.</p>
 <h3>3.4 Letters</h3>
 <p>For each letter I store:</p>
 <ul>
@@ -171,13 +183,17 @@ report afterwards. The person reported is not told who reported them – unless 
 to. But a letter has only one recipient: if I act on a reported letter, its sender may guess who
 reported it.</p>
 <p>When you report, &quot;also block&quot; is already switched on. You can switch it off if you still want to get
-letters from that person.</p>
+letters from that person. If you report the same letter again, or the same person again without a
+letter, before you close the app or sign out, it starts as you left it the last time.</p>
 <p><strong>What I do with a report:</strong> I read every report. Depending on what happened, I do nothing, send the
 person a warning to the email address of their account, or remove their account (section 3.8). If
 it is about a threat, I suspend the reported account at once, but remove it only a week later.
 Before that, I write to the person who reported it, at the email address of their account: every
 letter between the two of you goes with the other account, and they should be able to keep copies
-first. With threats or possible crimes, I may pass a report on to the police, together with the
+first. If you blocked the person when you reported them – which happens unless you switch it off –
+their letters are hidden from you (section 3.6). To make copies, unblock them first: &quot;Your profile&quot;
+→ &quot;Blocked couriers&quot; → &quot;Unblock&quot;. You can block them again afterwards, from one of their letters.
+With threats or possible crimes, I may pass a report on to the police, together with the
 reported account&#39;s sign-in data as far as it is still stored by then: its sessions and its entries
 in the sign-in log, each with an IP address (section 3.9).</p>
 <p><strong>How long:</strong> a report is deleted automatically 180 days after it was made – whether it has been
@@ -193,15 +209,24 @@ requires me to, the legal basis is Art. 6(1)(c) GDPR.</p>
 <h3>3.8 Removed and banned accounts</h3>
 <p>If someone breaks the house rules seriously or repeatedly, I remove their account. Their profile,
 bats, friendships, blocks and every letter the account sent or received are then deleted – on both
-sides. If it is about a threat, I suspend the account at once: it can no longer sign in, and the
-app stops working on it within the hour, but nothing is deleted yet. I remove it a week later, so that the person who reported it can keep copies
-first (section 3.7).</p>
+sides. If it is about a threat, I suspend the account at once, but nothing is deleted yet. I
+remove it a week later, so that the person who reported it can keep copies first (section 3.7).</p>
+<p>A suspended account stops working at once: it can no longer write to anyone, change its name or
+city, read its letters or see its friends, and it cannot be deleted in the app. The app says that
+the account has been suspended, and offers to sign out or to contact me; if it is your account and
+you want it deleted, write to me. Signing in to it is answered as if the password were wrong, so
+that the app does not tell anyone who merely knows the email address what has become of the
+account: that takes the code from &quot;I forgot my password&quot;, which reaches no one but the owner of the
+mailbox, and the app then says that the account is suspended. Letters it sent that are still in
+the air land as usual, and its friends can still send it letters: refusing their letters would tell
+them of the suspension.</p>
 <p>So that the same person cannot simply sign up again with the same email address, I ban the
-account&#39;s sign-in when I remove it. The account record then stays at Supabase: the email address,
-the password hash and the times from section 3.1. It is kept for <strong>two years from the removal</strong>;
-then a daily job deletes it. Its sessions end sooner: a daily job deletes each once it has gone
-unused for 90 days, and a banned account can no longer use them. Its entries in the sign-in log are
-deleted once they are 30 days old (section 3.9).</p>
+account&#39;s sign-in when I remove it; signing in with that address is then answered as for a
+suspended account. The account record then stays at Supabase: the email address, the password hash
+and the times from section 3.1. It is kept for <strong>two years from the removal</strong>; then a daily job
+deletes it. Its sessions end sooner: a daily job deletes each once it has gone unused for 90 days,
+and a banned account can no longer use them. Its entries in the sign-in log are deleted once they
+are 30 days old (section 3.9).</p>
 <p>This ban is only for accounts removed for breaking the rules. An account deleted for any other
 reason – by its owner, by me at its owner&#39;s request, or by me in the cases in sections 3.10 and
 10 – leaves no ban behind: its
@@ -214,39 +239,57 @@ makes to the server carries your IP address and a technical label for your devic
 system (the so-called user agent).</p>
 <ul>
 <li><strong>Sessions.</strong> Each sign-in creates a session with your IP address, user agent and times. When you
-sign out (&quot;Sign out&quot;), your sessions are deleted, on all your devices at once. They are also
-deleted with your account. A session that has not been used for <strong>90 days</strong> – on a device where
-you have not opened the app for that long – is deleted by a daily job; there you sign in again. If
-signing out does not reach the server, without a network for example, the app still signs you out
-on your device, but the sessions on the server stay until then; sign in and out once more. If you
-lose a phone, sign in and out on another device, or write to me.</li>
+sign out (&quot;Sign out&quot;), the app asks the server to delete your sessions, for all your devices, and
+signs you out on this device within a few seconds, whether or not the server has answered by
+then. Another device that is still signed in keeps working until its sign-in would next be
+renewed – for up to an hour – and then has to sign in again. Sessions are also deleted with your
+account. A session that has not been used for <strong>90 days</strong> – on a device where you have not opened
+the app for that long – is deleted by a daily job; there you sign in again. If the server does
+not hear of your sign-out – without a network, for example – your sessions there stay until that
+job deletes them; this device&#39;s only until you next sign in on it, if you have not closed the app
+in between, since the app then tells the server. To end them all sooner, sign in and out once
+more. If you lose a phone, sign in and out on another device – the sign-in on the lost phone then
+stops working within the hour – or write to me.</li>
 <li><strong>Sign-in tokens.</strong> While the app is open, your sign-in is renewed about once an hour. Each
 renewal creates a new token, and the old one stops working. Tokens are kept at most as long as the
 session they belong to.</li>
 <li><strong>Sign-in log.</strong> Supabase logs events such as sign-up, sign-in, sign-out, every renewal of your
 sign-in, requesting a new password and changing it, each with your user ID, email address, time
 and, where recorded, IP address. It shows when you used the app. A daily job deletes every entry
-after 30 days. When you delete your account, your entries are deleted with it at once.</li>
+after 30 days. When you delete your account, or I delete it – at your request, or in the cases
+in sections 3.10 and 10 – your entries are deleted with it at once. Only an account I remove
+for breaking the rules keeps its entries until they are 30 days old (section 3.8).</li>
 <li><strong>Server logs.</strong> Supabase logs requests to the server: IP address, time, the address requested
-(which can contain your user ID), user agent and result, for sign-ins also your email address, and
-database error messages. The app sends letters, notes and names in the body of a request, not in
-its address, so they do not normally end up in these logs. A database error message can contain a
-single value, though, such as a username that is already taken at sign-up. Supabase deletes these
-logs automatically after a short time.</li>
+(which can contain your user ID and, when you change your city, the ID of the city your bats
+currently fly from, or the information that no letter has gone to or from you yet), user agent and
+result, for sign-ins also your email address, and database error messages. The app sends letters,
+notes and names in the body of a request, not in its address, so they do not normally end up in
+these logs. A database error message can contain a single value, though, such as a username that
+is already taken at sign-up. Supabase deletes these logs automatically after a short time.</li>
 </ul>
 <p><strong>Legal basis:</strong> Art. 6(1)(b) GDPR as far as your sign-in is concerned. Otherwise Art. 6(1)(f) GDPR:
 my legitimate interest is running the app safely and reliably, spotting attacks and abuse, and
 finding faults.</p>
 <h3>3.10 Emails from Night Courier</h3>
-<p>The only emails Night Courier sends you automatically are about your account: a link to reset your
-password when you ask for one, and – once it is switched on – a link to confirm your email address
-at sign-up. The email contains a one-time link that goes through Supabase&#39;s server back into the
-app. No newsletters, no ads. When I write to you myself (section 3.1), the email comes from my
-mailbox (section 3.11).</p>
+<p>The only emails Night Courier sends you automatically are about your account: a code to set a new
+password when you ask for one, and – once it is switched on – a code to confirm your email address
+at sign-up. You type the code into the app. It has 8 digits, works once and for a day, and only the
+newest one counts. The emails contain no link. No newsletters, no ads. When I write to you myself
+(section 3.1), the email comes from my mailbox (section 3.11).</p>
 <p>At the moment, an email address is not yet confirmed at sign-up. If someone has used your email
 address for an account without your knowledge, write to me, and I will delete that account. Once
-confirmation is switched on, a daily job deletes every sign-up whose email address has not been
-confirmed within 7 days, profile and all.</p>
+confirmation is switched on, a daily job deletes every sign-up whose email address is still not
+confirmed 7 days after the last code sent to confirm it, profile and all. If you sign up with your
+address yourself before then, the code that confirms it makes that account yours: confirming the
+address deletes the password set before, and the app gives the account the password and the
+display name you chose – or, if the account has another username, deletes it and sets up yours in
+its place, with a new code. If you
+use &quot;I forgot my password&quot; for such an account instead, its code deletes the account, and you can
+then sign up. If the answer to your code is lost on the way – the connection breaks just then –
+your address can be confirmed without the app having given the account your password and names.
+You then set a password with &quot;I forgot my password&quot;, and the account keeps the username and display
+name it had: if they are not the ones you chose, delete the account in your profile and sign up
+again, as the app tells you.</p>
 <p><strong>Legal basis:</strong> Art. 6(1)(b) GDPR.</p>
 <h3>3.11 When you write to me</h3>
 <p>When you write to me – through &quot;Contact&quot; in the app or to <a href="mailto:vinnivinz@live.de">vinnivinz@live.de</a>, with a question,
@@ -299,8 +342,15 @@ display name, and the cities it flew from and to – even after you are no longe
 long as the letter exists. If you change your display name, old letters show the new one too.</li>
 <li><strong>Anyone who sends you a letter</strong> sees when it landed, but never whether or when you opened it.</li>
 <li><strong>Anyone who has blocked you</strong> sees you by your username only, not your display name.</li>
-<li><strong>Anyone who knows your exact username</strong> can find out that it exists, by sending you a request.
-They learn nothing more from that until you accept.</li>
+<li><strong>Anyone who tries your username</strong> can find out that it exists – by sending a friend request to
+it, or by trying to sign up with it. Usernames can be guessed: a request to a name nobody has is
+refused, but not counted. One account can make at most 20 new requests an hour (section 3.3), and
+each request shows you the sender&#39;s username and display name. They learn nothing more from that
+until you accept.</li>
+<li><strong>Anyone who knows your email address</strong> can find out whether it has a Night Courier account.
+While email addresses are not yet confirmed at sign-up (section 3.10), trying to sign up with it
+says so; after that, the answers of the sign-in server can still give it away. They learn nothing
+else about your account from that.</li>
 <li><strong>Other users</strong> do not see whom you have blocked or reported (although that person may guess,
 sections 3.6 and 3.7), whether you are online, or whether you are writing.</li>
 </ul>
@@ -308,8 +358,8 @@ sections 3.6 and 3.7), whether you are online, or whether you are writing.</li>
 received one from you, has exchanged letters with you, or has blocked you; the app does not show it.</p>
 <h2>5. What is stored on your device</h2>
 <ul>
-<li>On your device the app stores only your sign-in (the &quot;session&quot;). It contains an access token with
-your user ID and your email address, a token for renewing the sign-in, and some details of your
+<li>On your device the app stores your sign-in (the &quot;session&quot;). It contains an access token with your
+user ID and your email address, a token for renewing the sign-in, and some details of your
 account. Until the copy of your names from sign-up has been deleted (section 3.1) and your sign-in
 has been renewed once after that, those names are in it too.</li>
 <li><strong>On an iPhone</strong> it is in the iOS keychain, readable only while the iPhone is unlocked, and only on
@@ -317,11 +367,20 @@ this device: it does not move to a new iPhone, not even with a backup; you sign 
 may stay in the keychain after the app is deleted – sign out first if you want to be sure.</li>
 <li><strong>On Android</strong> it is encrypted with the Android Keystore. It is excluded from backups and from
 transfer to a new device.</li>
-<li>When you sign out, and after you delete your account, the app deletes the session from your
-device, even if the server cannot be reached at that moment.</li>
+<li>While you are using a code from an email (section 3.10), the app also keeps a note beside the
+session of what the code is for: your email address and, when you are signing up, the username
+and display name you typed – never your password. If the app is closed after the code has signed
+you in but before that is done, it carries on the next time it opens. The note is kept where the
+session is, and deleted once your account is set up or your password saved, when you sign out or
+sign in with your password, and when the app opens without a sign-in for that address.</li>
+<li>When you sign out, the app deletes the session and that note from your device, even if the
+server cannot be reached at that moment. After you delete your account, it does so as soon as it
+knows that the deletion went through. Until you close the app, it may still keep the session in
+its memory – it does not store it – to make sure the sign-out holds: if the server could not be
+reached, the app tells it at your next sign-in.</li>
 <li>Apart from that, the app stores nothing on your device. Letters, drafts, friend lists and reports
 are on the device only while the app is open. A letter you have started is gone when you close the
-app.</li>
+app or sign out.</li>
 <li>What your device does by itself is outside the app: the app switcher can show a picture of an open
 letter, for example, the keyboard learns words you type, and a password manager may offer to save
 your password.</li>
@@ -333,10 +392,11 @@ processing (section 1).</p>
 <li><strong>Art. 6(1)(b) GDPR (contract):</strong> everything needed to provide the app to you – account, profile,
 city, friendships, letters, bats, blocking, sign-in and the emails about your account.</li>
 <li><strong>Art. 6(1)(f) GDPR (legitimate interests):</strong> security (sessions and logs), dealing with abuse
-(reports, warnings, removing accounts), keeping reports for 180 days, keeping removed accounts
-banned for two years from the removal, passing a report to the police voluntarily, crash reports,
-and visits to the web pages on GitHub Pages (section 7). The interests behind them: a safe app, protecting the people who use it – children and
-young people above all – and evidence for victims.</li>
+(reports, warnings, removing accounts, the hourly limit on friend requests), keeping reports for
+180 days, keeping removed accounts banned for two years from the removal, passing a report to the
+police voluntarily, crash reports, and visits to the web pages on GitHub Pages (section 7). The
+interests behind them: a safe app, protecting the people who use it – children and young people
+above all – and evidence for victims.</li>
 <li><strong>Art. 6(1)(c) GDPR (legal obligation):</strong> where the law requires me to hand data over, for example
 to the police, a public prosecutor or a court, and when I answer your requests about your data
 protection rights.</li>
@@ -350,7 +410,7 @@ project runs in Supabase&#39;s Zurich region (Switzerland), on servers of Amazon
 Supabase uses further sub-processors and publishes a list of them on supabase.com. Privacy
 policy: <a href="https://supabase.com/privacy">https://supabase.com/privacy</a></li>
 <li><strong>Email delivery.</strong> The emails about your account (section 3.10) are sent by Supabase or by an
-email delivery service acting as my processor. It receives your email address and the link in the
+email delivery service acting as my processor. It receives your email address and the code in the
 email, and keeps a log of what it sent.</li>
 <li><strong>Microsoft.</strong> Microsoft runs my mailbox (Outlook.com), and so receives what you write to me and
 what I write to you – under its own privacy statement:
@@ -414,12 +474,20 @@ they safeguard it is set out in their own privacy policies.</li>
 <td>at most two days after the change (section 3.2)</td>
 </tr>
 <tr>
+<td>Whether a letter has gone to or from you</td>
+<td>as long as your account (section 3.2)</td>
+</tr>
+<tr>
 <td>Letters</td>
 <td>until you or the other person deletes their account, or I remove one of the two; there is no period</td>
 </tr>
 <tr>
 <td>Friendships and requests</td>
 <td>until ended, declined or withdrawn, or until an account is deleted</td>
+</tr>
+<tr>
+<td>Count of your new friend requests in an hour</td>
+<td>until a daily job deletes it, at the latest two days after that hour began, or with your account (section 3.3)</td>
 </tr>
 <tr>
 <td>Blocks</td>
@@ -439,7 +507,7 @@ they safeguard it is set out in their own privacy policies.</li>
 </tr>
 <tr>
 <td>Sessions</td>
-<td>until you sign out or the account is deleted; otherwise a daily job deletes it once unused for 90 days</td>
+<td>until you sign out and the server hears of it, or the account is deleted; otherwise a daily job deletes it once unused for 90 days</td>
 </tr>
 <tr>
 <td>Sign-in tokens</td>
@@ -447,11 +515,11 @@ they safeguard it is set out in their own privacy policies.</li>
 </tr>
 <tr>
 <td>Sign-in log</td>
-<td>30 days; your entries are deleted with your account</td>
+<td>30 days; your entries go at once when you delete your account or I delete it at your request (section 3.9)</td>
 </tr>
 <tr>
 <td>A sign-up whose email address is never confirmed</td>
-<td>7 days, once confirmation is switched on (section 3.10)</td>
+<td>7 days after the last code sent to confirm it, once confirmation is switched on (section 3.10)</td>
 </tr>
 <tr>
 <td>Server logs at Supabase</td>
@@ -498,13 +566,14 @@ letter – as evidence, for example – should take a screenshot first.</li>
 <ul>
 <li><strong>Access (Art. 15):</strong> you can find out what data I hold about you, and get a copy.</li>
 <li><strong>Rectification (Art. 16):</strong> you can change your display name and city yourself, in your profile.
-For your username or email address, write to me.</li>
+Your username cannot be changed. For your email address, write to me.</li>
 <li><strong>Erasure (Art. 17):</strong> you delete your account yourself, in the app: &quot;Your profile&quot; → &quot;Delete my
-account&quot;. It happens at once and cannot be undone. Your account, profile, bats, friendships,
-blocks, every letter you sent or received – from the other people&#39;s side too – and your entries
-in the sign-in log. What remains afterwards: reports (up to 180 days, section 3.7), server logs
-and backups until they are deleted automatically, emails between you and me, and what Apple or
-Google hold about your test version (section 3.12).</li>
+account&quot;. It happens at once and cannot be undone. It deletes your account, your profile, your
+bats, friendships and blocks, every letter you sent or received – on the other people&#39;s side
+too – and your entries in the sign-in log. What remains afterwards: reports (up to 180 days,
+section 3.7), server logs and backups until they are deleted automatically, emails between you
+and me, and what Apple or Google hold about your test version (section 3.12). A suspended
+account cannot be deleted in the app; then write to me (section 3.8).</li>
 <li><strong>Restriction (Art. 18):</strong> you can ask me to only store some data for now and not use it otherwise
 – while it is being settled whether it is correct, for example.</li>
 <li><strong>Data portability (Art. 20):</strong> you can get the data you gave me in a common, machine-readable
@@ -562,7 +631,7 @@ in letters is up to you.</p>
 <p>I update this policy when the app or the law changes. The current version is always at
 <a href="https://vnznznznz.github.io/night-courier/privacy-policy.de.html">https://vnznznznz.github.io/night-courier/privacy-policy.de.html</a>, and in the app under &quot;Privacy policy&quot;. I will tell you about important
 changes in advance, by email for example.</p>
-<p><strong>Effective: 10 November 2026</strong></p>
+<p><strong>Effective: 21 November 2026</strong></p>
 
 </main>
 </body>
