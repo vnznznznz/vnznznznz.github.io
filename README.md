@@ -30,8 +30,8 @@ npm run build:pages -- --out ../vnznznznz.github.io
 ```
 
 `LAUNCH_STATE=before-launch` puts a notice at the top of every page that Night Courier has not
-started and that nothing is processed yet. Build with `LAUNCH_STATE=live` (and `DPA_SIGNED`, the
-date the processing agreement with Supabase was signed) only as the app repository's
+started and that nothing is processed yet. Build with `LAUNCH_STATE=live` (and `DPA_SINCE`, the date
+from which the processing agreement with Supabase demonstrably applies) only as the app repository's
 `docs/GO-LIVE.md`, "Where the web pages live", says.
 
 Then commit and push here; GitHub publishes within a minute or two. `.nojekyll` makes GitHub serve
